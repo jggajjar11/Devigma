@@ -11,12 +11,12 @@ const ProfilesTab = () => {
   console.log(skills);
 
   return (
-    <div className="container mx-auto px-4">
+    <div className="max-w-[1420px] mx-auto px-4">
       <div className="flex items-center gap-x-3 mb-8 overflow-x-auto whitespace-nowrap">
-        {skills.map((crSkill) => (
+        {skills.map((crSkill, index) => (
           <div
-            key={crSkill}
-            className={`text-lg uppercase rounded-full  px-4 py-3 border border-[#DAD8DD] cursor-pointer
+            key={index}
+            className={`text-lg capitalize rounded-full px-4 py-3 border border-[#DAD8DD] cursor-pointer
              
              ${
                skill === crSkill

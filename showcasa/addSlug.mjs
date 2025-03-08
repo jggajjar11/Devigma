@@ -2,30 +2,40 @@ import fs from "fs";
 import path from "path";
 import profiles from "./src/data/profiles.json" assert { type: "json" }; // Ensure JSON module import works
 
+const generateSlug = (text) => {
+  return text
+    .toLowerCase()
+    .replace(/\s+/g, "-")
+    .replace(/[^a-z0-9\-]/g, "");
+};
+
 const generateUniqueSlugs = (profiles) => {
   const slugSet = new Set();
 
   return profiles.map((profile) => {
-    let slug = profile.name.toLowerCase().replace(/\s+/g, "-");
+    let slug = generateSlug(profile.name);
     let uniqueSlug = slug;
     let counter = 1;
 
-    // Ensure uniqueness
     while (slugSet.has(uniqueSlug)) {
       uniqueSlug = `${slug}-${counter}`;
       counter++;
     }
 
     slugSet.add(uniqueSlug);
-    return { ...profile, slug: uniqueSlug };
+
+    const updatedPortfolio = profile.portfolio.map((work) => ({
+      ...work,
+      workSlug: `${generateSlug(work.title)}-${uniqueSlug}`,
+    }));
+
+    return { ...profile, slug: uniqueSlug, portfolio: updatedPortfolio };
   });
 };
 
-// Add slugs to profiles
 const updatedProfiles = generateUniqueSlugs(profiles);
 
-// Write updated profiles back to JSON file
 const filePath = path.resolve("./src/data/profiles.json");
 fs.writeFileSync(filePath, JSON.stringify(updatedProfiles, null, 2), "utf-8");
 
-console.log("Slugs added successfully!");
+console.log("Slugs and work slugs added successfully!");

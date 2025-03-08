@@ -8,8 +8,9 @@
     "portfolio": [
       {
         "title": "Personal Website",
-        "description": "Built a responsive personal portfolio site.",
-        "image": "https://via.placeholder.com/150"
+        "description": "<h3 id=project-goal>Project Goal:</h3><ul><li>Designed a sleek, modern, and intuitive e-commerce platform for fashion enthusiasts.<li>Focused on creating a visually engaging and seamless online shopping experience.</ul><h3 id=ui--visual-design>UI & Visual Design:</h3><ul><li>Minimal aesthetics with bold typography for a high-end look.<li>Dynamic product displays showcasing high-quality fashion imagery.<li>Personalized recommendation system for better user engagement.</ul><h3 id=ux-strategy>UX Strategy:</h3><ul><li>Effortless navigation with clear category divisions and smart filters.<li>Smooth checkout flow with multiple payment options.<li>Responsive design ensuring seamless shopping across mobile & desktop.</ul><h3 id=features--interactions>Features & Interactions:</h3><ul><li>Quick View & Wishlist for a faster shopping experience.<li>Interactive animations for a premium feel.<li>Dark & Light mode support for accessibility.</ul><h3 id=tools-used>Tools Used:</h3><ul><li>Figma – High-fidelity UI/UX prototyping.<li>Photoshop – Enhanced product visuals & branding.</ul>",
+        "image": "https://res.cloudinary.com/deuyiptwq/image/upload/v1741463075/sword_ty08rc.jpg",
+        "workSlug": "personal-website-john-doe"
       }
     ],
     "personality": "Creative, Self-Starter",
@@ -25,7 +26,8 @@
       {
         "title": "API Development",
         "description": "Created scalable RESTful APIs for e-commerce platforms.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://res.cloudinary.com/deuyiptwq/image/upload/v1741463073/tshirt_urrfkh.png",
+        "workSlug": "api-development-john-doe-1"
       }
     ],
     "personality": "Analytical, Problem-Solver",
@@ -41,7 +43,8 @@
       {
         "title": "API Development",
         "description": "Created scalable RESTful APIs for e-commerce platforms.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://res.cloudinary.com/deuyiptwq/image/upload/v1741462986/cld-sample-5.jpg",
+        "workSlug": "api-development-john-doe-2"
       }
     ],
     "personality": "Analytical, Problem-Solver",
@@ -57,7 +60,8 @@
       {
         "title": "E-Commerce Platform",
         "description": "Developed a full-stack e-commerce application.",
-        "image": "https://via.placeholder.com/150"
+        "image": "https://res.cloudinary.com/deuyiptwq/image/upload/v1741463076/Stainless_Steel_Tumbler_with_Straw_Packaging_Design_Ideas_qyd5yg.jpg",
+        "workSlug": "e-commerce-platform-jane-smith"
       }
     ],
     "personality": "Versatile, Team Player",
