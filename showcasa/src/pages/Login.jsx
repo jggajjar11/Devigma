@@ -48,7 +48,7 @@ const Login = ({ onLogin }) => {
         <img
           src={loginImg}
           alt="showcasa login"
-          className="w-full object-cover"
+          className="w-full object-cover h-full"
           width={960}
           height={1024}
         />
