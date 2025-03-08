@@ -22,9 +22,7 @@ const App = () => {
 
   const handleLogin = () => {
     setIsAuthenticated(true);
-    localStorage.setItem("isAuthenticated", "true");
-    //this will fix the issue of dropdown not showing after login
-    window.location.reload();
+    localStorage.setItem("isAuthenticated", "true");    
   };
 
   const handleLogout = () => {
