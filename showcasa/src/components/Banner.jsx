@@ -8,9 +8,7 @@ export const Banner = () => {
         <div className="max-w-[700px] mx-auto">
           <h1 className="mb-5">Showcase Your Talent. Get Discovered.</h1>
           <p className="text-[#646167]">
-            A dynamic platform where creativity meets opportunity. Build
-            interactive profiles, share your best work, and connect with
-            recruiters who value skills over degrees.
+          Welcome to a platform where creativity thrives! Build your profile, showcase your best work, and connect with recruiters who appreciate your unique talent.
           </p>
           <div className="flex flex-wrap gap-y-8 gap-x-5 items-center justify-center mt-8">
             <Link to="/search" className="btn btn-secondary">
