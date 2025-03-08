@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "tagline": "Creative Frontend Developer",
+    "skills": ["React", "CSS", "JavaScript"],
+    "portfolio": [
+      {
+        "title": "Personal Website",
+        "description": "Built a responsive personal portfolio site.",
+        "image": "https://via.placeholder.com/150"
+      }
+    ],
+    "personality": "Creative, Self-Starter"
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "tagline": "Full Stack Developer",
+    "skills": ["Node.js", "Express", "React"],
+    "portfolio": [
+      {
+        "title": "E-Commerce App",
+        "description": "Developed a full-stack e-commerce application.",
+        "image": "https://via.placeholder.com/150"
+      }
+    ],
+    "personality": "Analytical, Detail-Oriented"
+  }
+]
