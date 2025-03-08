@@ -1,0 +1,26 @@
+import React from "react";
+import { Link } from "react-router-dom";
+
+const ProfileCard = ({ profile }) => {
+  return (
+    <div className="profile-card">
+      <h2>{profile.name}</h2>
+      <p>{profile.tagline}</p>
+      <h4>Skills:</h4>
+      <ul>
+        {profile.skills.map((skill, index) => (
+          <li key={index}>{skill}</li>
+        ))}
+      </ul>
+      <p>
+        <strong>Personality:</strong> {profile.personality}
+      </p>
+      {/* Link to Profile Detail page */}
+      <Link to={`/profile/${profile.id}`} className="view-profile">
+        View Full Profile
+      </Link>
+    </div>
+  );
+};
+
+export default ProfileCard;
