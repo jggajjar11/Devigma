@@ -106,8 +106,8 @@ p {
 }
 
 /* button */
-.btn {
-  padding: 15px 40px;
+.btn{
+  padding: 11px 40px;
   border-radius: 60px;
   cursor: pointer;
   font-family: var(--font-inter);
