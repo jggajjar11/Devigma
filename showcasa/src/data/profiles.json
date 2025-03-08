@@ -11,20 +11,37 @@
         "image": "https://via.placeholder.com/150"
       }
     ],
-    "personality": "Creative, Self-Starter"
+    "personality": "Creative, Self-Starter",
+    "slug": "john-doe"
   },
   {
     "id": 2,
-    "name": "Jane Smith",
-    "tagline": "Full Stack Developer",
-    "skills": ["Node.js", "Express", "React"],
+    "name": "John Doe",
+    "tagline": "Backend Developer",
+    "skills": ["Node.js", "Express", "MongoDB"],
     "portfolio": [
       {
-        "title": "E-Commerce App",
+        "title": "API Development",
+        "description": "Created scalable RESTful APIs for e-commerce platforms.",
+        "image": "https://via.placeholder.com/150"
+      }
+    ],
+    "personality": "Analytical, Problem-Solver",
+    "slug": "john-doe-1"
+  },
+  {
+    "id": 3,
+    "name": "Jane Smith",
+    "tagline": "Full Stack Developer",
+    "skills": ["React", "Node.js", "GraphQL"],
+    "portfolio": [
+      {
+        "title": "E-Commerce Platform",
         "description": "Developed a full-stack e-commerce application.",
         "image": "https://via.placeholder.com/150"
       }
     ],
-    "personality": "Analytical, Detail-Oriented"
+    "personality": "Versatile, Team Player",
+    "slug": "jane-smith"
   }
 ]

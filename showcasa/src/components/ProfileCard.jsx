@@ -15,8 +15,8 @@ const ProfileCard = ({ profile }) => {
       <p>
         <strong>Personality:</strong> {profile.personality}
       </p>
-      {/* Link to Profile Detail page */}
-      <Link to={`/profile/${profile.id}`} className="btn btn-primary">
+      {/* Link to the Profile Detail page */}
+      <Link to={`/profile/${profile.slug}`} className="btn btn-primary">
         <span className="relative z-[1]">View Full Profile</span>
       </Link>
     </div>
