@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Literata:ital,opsz,wght@0,7..72,200..900;1,7..72,200..900&display=swap");
 @import "tailwindcss";
 
 /* new css start */
 :root {
-  --font-inter: 'Inter', sans-serif;
-  --font-literata: 'Literata', sans-serif;
+  --font-inter: "Inter", sans-serif;
+  --font-literata: "Literata", sans-serif;
   --h1: 60px;
   --h2: 48px;
   --h3: 36px;
@@ -13,10 +13,9 @@
   --h5: 24px;
   --h6: 20px;
   --body: 16px;
-  --small: 13px;    
-  --btnprimary: #703CD2;  
+  --small: 13px;
+  --btnprimary: #703cd2;
 }
-
 
 .font-inter {
   font-family: var(--font-inter);
@@ -62,42 +61,52 @@
 
 .font-literata-semi-bold {
   font-family: var(--font-literata);
-  font-weight: 600; 
+  font-weight: 600;
   font-style: normal;
 }
 
-.h1,h1{
+.h1,
+h1 {
+  font-family: var(--font-literata);
   font-size: var(--h1);
+  font-weight: bold;
   line-height: 120%;
 }
-.h2,h2{
+.h2,
+h2 {
   font-size: var(--h2);
   line-height: 120%;
 }
-.h3,h3{
+.h3,
+h3 {
   font-size: var(--h3);
   line-height: 120%;
 }
-.h4,h4{
+.h4,
+h4 {
   font-size: var(--h4);
   line-height: 120%;
 }
-.h5,h5{
+.h5,
+h5 {
   font-size: var(--h5);
   line-height: 120%;
 }
-.h6,h6{
+.h6,
+h6 {
   font-size: var(--h6);
   line-height: 120%;
 }
-.body,body,p{
+.body,
+body,
+p {
   font-family: var(--font-inter);
   font-size: var(--body);
   line-height: 160%;
 }
 
 /* button */
-.btn{
+.btn {
   padding: 15px 40px;
   border-radius: 60px;
   cursor: pointer;
@@ -112,14 +121,14 @@
   background-color: var(--btnprimary);
   color: #ffffff;
   border: 1px solid transparent;
-  overflow: hidden;  
-  transition: border-color ease-out .5s, background-color .20s linear 0s;
+  overflow: hidden;
+  transition: border-color ease-out 0.5s, background-color 0.2s linear 0s;
 }
-.btn-primary span{
-  transition: color .20s linear .5s;
+.btn-primary span {
+  transition: color 0.2s linear 0.5s;
 }
 .btn-primary::after {
-  background-color: #D4C7FF;
+  background-color: #d4c7ff;
   border-radius: 50%;
   content: "";
   height: 200px;
@@ -132,26 +141,26 @@
   width: 100%;
   z-index: 0;
 }
-.btn-primary:hover{  
+.btn-primary:hover {
   color: var(--btnprimary);
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 .btn-primary:hover::after {
   transform: scale(1.6) translateY(0);
 }
-.btn-secondary{
+.btn-secondary {
   position: relative;
   overflow: hidden;
-  transition: border-color ease-out .5s, background-color .20s linear 0s;
+  transition: border-color ease-out 0.5s, background-color 0.2s linear 0s;
   background-color: transparent;
-  color: #703CD2;
-  border: 1px solid #703CD2;
+  color: #703cd2;
+  border: 1px solid #703cd2;
 }
-.btn-secondary span{
-  transition: color .20s linear .5s;
+.btn-secondary span {
+  transition: color 0.2s linear 0.5s;
 }
 .btn-secondary::after {
-  background-color: #703CD2;
+  background-color: #703cd2;
   border-radius: 50%;
   content: "";
   height: 200px;
@@ -164,9 +173,9 @@
   width: 100%;
   z-index: 0;
 }
-.btn-secondary:hover{  
+.btn-secondary:hover {
   color: white;
-  transition-delay: .5s;
+  transition-delay: 0.5s;
 }
 .btn-secondary:hover::after {
   transform: scale(1.6) translateY(0);

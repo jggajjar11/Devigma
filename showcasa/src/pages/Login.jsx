@@ -15,7 +15,8 @@ const Login = ({ onLogin }) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError("");
-    setIsLoading(true); // Start loading
+    onLogin();
+    return;
 
     try {
       const response = await fetch("http://localhost:5000/login", {

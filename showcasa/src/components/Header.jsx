@@ -8,21 +8,15 @@ const Header = ({ isAuthenticated, handleLogout }) => {
     <header className="header">
       <nav className="bg-white border-gray-200">
         {/* <nav> */}
-        <Link to="/">Home</Link>
-        <Link to="/search">Search</Link>
-        {isAuthenticated ? (
-          <button onClick={handleLogout}>Logout</button>
-        ) : (
-          <Link to="/login">Login</Link>
-        )}
+
         {/* </nav> */}
         <div className="max-w-[1420px] flex flex-wrap items-center justify-between mx-auto p-5">
-          <a
-            href="/"
+          <Link
+            to="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
             <img src={showcasa} alt="ShowCasa Logo" />
-          </a>
+          </Link>
           <div className="flex items-center space-x-3 md:space-x-0">
             <button
               data-collapse-toggle="navbar-default"
@@ -82,11 +76,16 @@ const Header = ({ isAuthenticated, handleLogout }) => {
                 </li>
               </ul>
             </div>
-            <div className="user-profile-img hidden md:block">
-              <Link to="/profile" className="font-inter text-[#211F24] ">
-                <img src={userimg} width={"56px"} height={"56px"} />
-              </Link>
-            </div>
+            {isAuthenticated ? (
+              <div className="user-profile-img hidden md:block">
+                <Link to="/profile" className="font-inter text-[#211F24] ">
+                  <img src={userimg} width={"56px"} height={"56px"} />
+                </Link>
+                <button onClick={handleLogout}>Logout</button>
+              </div>
+            ) : (
+              <Link to="/login">Login</Link>
+            )}
           </div>
         </div>
       </nav>
