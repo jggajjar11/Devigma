@@ -104,7 +104,9 @@ p {
   font-size: var(--body);
   line-height: 160%;
 }
-
+a:hover{
+  color: #703cd2;
+}
 /* button */
 .btn{
   padding: 11px 40px;
