@@ -37,7 +37,7 @@ const App = () => {
         {/* Public Routes */}
         <Route element={<RedirectToHome isAuthenticated={isAuthenticated} />}>
           <Route path="/login" element={<Login onLogin={handleLogin} />} />
-          <Route path="/signup" element={<Signup />} />
+          {/* <Route path="/signup" element={<Signup />} /> */}
         </Route>
 
         {/* Protected Routes */}
