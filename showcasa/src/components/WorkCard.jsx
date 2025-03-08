@@ -11,6 +11,17 @@ const WorkCard = ({ portfolio }) => {
   //       portfolioItem = found;
   //     }
   //   });
+
+  const getTruncatedText = (htmlString, limit) => {
+    const tempDiv = document.createElement("div");
+    tempDiv.innerHTML = htmlString;
+    const plainText = tempDiv.textContent || tempDiv.innerText || "";
+    return plainText.length > limit
+      ? `${plainText.slice(0, limit)}...`
+      : plainText;
+  };
+
+  const truncatedDescription = getTruncatedText(portfolio.description, 150);
   return (
     <Link to={`/portfolio/${portfolio.workSlug}`}>
       <div className="flex flex-col rounded-3xl border border-[#DAD8DD] h-full group">
@@ -23,7 +34,7 @@ const WorkCard = ({ portfolio }) => {
         </div>
         <div className="content-wrapper flex flex-col grow p-5 bg-white rounded-b-3xl overflow-hidden group-hover:bg-[#F3F0FF] duration-300 ease-in-out group-hover:cursor-pointer">
           <h6 className="font-bold text-[#211F24] mb-2">{portfolio.title}</h6>
-          <p className="text-[#646167] mb-1">{portfolio.description}</p>
+          <p className="text-[#646167]">{truncatedDescription}</p>
         </div>
       </div>
     </Link>

@@ -17,8 +17,8 @@ const Profile = ({ profile }) => {
   return (
     <div className="py-20">
       <div className="profile-detail max-w-[1420px] mx-auto px-4">
-        <div className="flex flex-wrap -mx-4">
-          <div className="left-side-details w-1/4 px-4">
+        <div className="flex flex-wrap -mx-4 gap-y-12">
+          <div className="left-side-details md:flex-shrink-0 px-4">
             <div className="flex flex-col gap-3">
               <img src={userImg} alt={profile.name} width="194" height="1944" />
               <h5 className="font-literata-bold text[#211F24]">
@@ -51,7 +51,7 @@ const Profile = ({ profile }) => {
               <p className="text-[#646167]">{profile.personality}</p>
             </div>
           </div>
-          <div className="right-side-details w-3/4 px-4">
+          <div className="right-side-details md:w-3/4 px-4 md:ml-auto">
             <div className="flex items-center gap-x-3 mb-8 overflow-x-auto whitespace-nowrap">
               {/* {skills.map((crSkill) => (
           <div
@@ -70,16 +70,16 @@ const Profile = ({ profile }) => {
           </div>
         ))} */}
 
-              <div className="text-lg uppercase rounded-full bg-white px-4 py-3 border border-[#DAD8DD] text-[#8F8A93] font-medium">
+              <div className="text-lg uppercase rounded-full bg-[#6D27D6] px-4 py-3 border border-[#DAD8DD] text-[#FFFFFF] font-medium">
                 Work
               </div>
-              <div className="text-lg uppercase rounded-full bg-[#6D27D6] px-4 py-3 border border-[#DAD8DD] text-[#FFFFFF] font-bold">
+              {/* <div className="text-lg uppercase rounded-full bg-[#6D27D6] px-4 py-3 border border-[#DAD8DD] text-[#FFFFFF] font-bold">
                 3D Model
-              </div>
+              </div> */}
             </div>
             <div className="flex flex-wrap -mx-4">
               {profile.portfolio.map((portfolio, index) => (
-                <div className="w-1/3 px-4">
+                <div className="w-full md:w-1/2 xl:w-1/3 px-4">
                   <WorkCard key={index} portfolio={portfolio} />
                 </div>
               ))}
