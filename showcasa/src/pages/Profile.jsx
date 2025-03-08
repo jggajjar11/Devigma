@@ -4,14 +4,14 @@ import profiles from "../data/profiles.json";
 import ProfileDetails from "../components/ProfileDetails";
 
 const Profile = () => {
-  const { id } = useParams();
-  const profile = profiles.find((p) => p.id === parseInt(id));
+  const { slug } = useParams(); // Extract the slug from the URL
+  const profile = profiles.find((p) => p.slug === slug); // Find the profile using the slug
 
-  return profile ? (
-    <ProfileDetails profile={profile} />
-  ) : (
-    <p>Profile not found</p>
-  );
+  if (!profile) {
+    return <p>Profile not found</p>;
+  }
+
+  return <ProfileDetails profile={profile} />;
 };
 
 export default Profile;

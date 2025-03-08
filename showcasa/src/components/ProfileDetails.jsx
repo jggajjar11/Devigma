@@ -2,9 +2,9 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import profiles from "../data/profiles.json";
 
-const Profile = () => {
-  const { id } = useParams(); // Get the profile ID from the URL
-  const profile = profiles.find((p) => p.id === parseInt(id)); // Find the matching profile
+const Profile = ({ profile }) => {
+  // const { slug } = useParams(); // Get the profile ID from the URL
+  // const profile = profiles.find((p) => p.slug === parseInt(slug)); // Find the matching profile
 
   if (!profile) {
     return <p>Profile not found</p>;
@@ -12,7 +12,7 @@ const Profile = () => {
 
   return (
     <div className="profile-detail">
-      <h1>{profile.name}</h1>
+      <h1>{profile.name}detail</h1>
       <p>
         <strong>Tagline:</strong> {profile.tagline}
       </p>

@@ -1,21 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
+import profilesData from "../data/profiles.json";
+
 import ProfileCard from "../components/ProfileCard";
-import profiles from "../data/profiles.json";
 
 const Home = () => {
-  const [talentProfiles, setTalentProfiles] = useState([]);
-
-  useEffect(() => {
-    // Simulate an API call
-    setTalentProfiles(profiles);
-  }, []);
-
   return (
-    <div className="home">
+    <div>
       <h1>Welcome to Talent Showcase</h1>
-      <div className="profiles">
-        {talentProfiles.map((profile) => (
-          <ProfileCard key={profile.id} profile={profile} />
+      <div className="profiles-grid">
+        {profilesData.map((profile) => (
+          <ProfileCard key={profile.slug} profile={profile} />
         ))}
       </div>
     </div>

@@ -27,7 +27,7 @@ const SearchResults = () => {
       <button onClick={handleSearch}>Search</button>
       <div className="results">
         {results.map((profile) => (
-          <ProfileCard key={profile.id} profile={profile} />
+          <ProfileCard key={profile.slug} profile={profile} />
         ))}
       </div>
     </div>
