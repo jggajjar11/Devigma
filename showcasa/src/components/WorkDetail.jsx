@@ -42,7 +42,7 @@ const WorkDetail = ({ portfolioItem, profile }) => {
         />
       </div>
       <div
-        className="mt-10 [&>h3]:text-2xl [&>h3]:mb-5 [&_li]:list-disc"
+        className="mt-10 [&>h3]:text-2xl [&>h3]:mt-10 [&>h3]:mb-5 [&_li]:mb-2"
         dangerouslySetInnerHTML={{ __html: portfolioItem.description }}
       ></div>
     </div>
