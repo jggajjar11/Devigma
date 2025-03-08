@@ -14,6 +14,8 @@ import ProtectedRoute from "./components/ProtectedRoute";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import RedirectToHome from "./components/RedirectToHome";
+import WorkCard from "./components/WorkCard";
+import Work from "./pages/Work";
 
 const App = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(
@@ -44,6 +46,7 @@ const App = () => {
         <Route element={<ProtectedRoute isAuthenticated={isAuthenticated} />}>
           <Route path="/" element={<Home />} />
           <Route path="/profile/:slug" element={<Profile />} />
+          <Route path="/portfolio/:workSlug" element={<Work />} />
           <Route path="/search" element={<SearchResults />} />
         </Route>
 

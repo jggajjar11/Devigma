@@ -79,6 +79,7 @@ h2 {
 }
 .h3,
 h3 {
+  font-family: var(--font-literata);
   font-size: var(--h3);
   line-height: 120%;
 }
@@ -108,7 +109,7 @@ a:hover{
   color: #703cd2;
 }
 /* button */
-.btn{
+.btn {
   padding: 11px 40px;
   border-radius: 60px;
   cursor: pointer;

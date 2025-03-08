@@ -6,7 +6,13 @@ const ProfileCard = ({ profile }) => {
   return (
     <div className="profile-card flex flex-col rounded-3xl border border-[#DAD8DD] h-full group">
       <div className="img-wrapper bg-[#D9D9D9] rounded-t-3xl overflow-hidden group-hover:cursor-pointer">
-        <img src={dummyRectangle} alt="user-profile-1" />
+        <img
+          src="/mobile.jpg"
+          className="h-[230px] object-cover w-full"
+          alt="user-profile-1"
+          width={340}
+          height={230}
+        />
       </div>
       <div className="content-wrapper flex flex-col grow p-5 bg-white rounded-b-3xl overflow-hidden group-hover:bg-[#F3F0FF] duration-300 ease-in-out group-hover:cursor-pointer">
         <h6 className="font-literata-bold text[#211F24] mb-2">
