@@ -2,7 +2,8 @@
   {
     "id": 1,
     "name": "John Doe",
-    "tagline": "Creative Frontend Developer",
+    "category": "Frontend",
+    "tagline": "Frontend Developer",
     "skills": ["React", "CSS", "JavaScript"],
     "portfolio": [
       {
@@ -17,6 +18,7 @@
   {
     "id": 2,
     "name": "John Doe",
+    "category": "Backend",
     "tagline": "Backend Developer",
     "skills": ["Node.js", "Express", "MongoDB"],
     "portfolio": [
@@ -30,8 +32,25 @@
     "slug": "john-doe-1"
   },
   {
+    "id": 5,
+    "name": "John Doe",
+    "category": "Backend",
+    "tagline": "Backend Developer",
+    "skills": ["Node.js", "Express", "MongoDB"],
+    "portfolio": [
+      {
+        "title": "API Development",
+        "description": "Created scalable RESTful APIs for e-commerce platforms.",
+        "image": "https://via.placeholder.com/150"
+      }
+    ],
+    "personality": "Analytical, Problem-Solver",
+    "slug": "john-doe-2"
+  },
+  {
     "id": 3,
     "name": "Jane Smith",
+    "category": "Full Stack",
     "tagline": "Full Stack Developer",
     "skills": ["React", "Node.js", "GraphQL"],
     "portfolio": [

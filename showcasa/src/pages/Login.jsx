@@ -18,25 +18,25 @@ const Login = ({ onLogin }) => {
     onLogin();
     return;
 
-    try {
-      const response = await fetch("http://localhost:5000/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(credentials),
-      });
+    // try {
+    //   const response = await fetch("http://localhost:5000/login", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify(credentials),
+    //   });
 
-      if (!response.ok) {
-        const { message } = await response.json();
-        setError(message || "Invalid credentials or user not found.");
-      } else {
-        onLogin();
-        navigate("/");
-      }
-    } catch (err) {
-      setError("An error occurred. Please try again.");
-    } finally {
-      setIsLoading(false); // Stop loading
-    }
+    //   if (!response.ok) {
+    //     const { message } = await response.json();
+    //     setError(message || "Invalid credentials or user not found.");
+    //   } else {
+    //     onLogin();
+    //     navigate("/");
+    //   }
+    // } catch (err) {
+    //   setError("An error occurred. Please try again.");
+    // } finally {
+    //   setIsLoading(false); // Stop loading
+    // }
   };
 
   return (
