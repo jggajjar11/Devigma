@@ -37,9 +37,9 @@ const ProfilesTab = () => {
           3D Model
         </div> */}
       </div>
-      <div className="profiles-grid flex flex-wrap -mx-4">
+      <div className="profiles-grid flex flex-wrap gap-y-10 -mx-4">
         {data.map((profile) => (
-          <div className="w-1/4 px-4">
+          <div className="w-full md:w-1/2 xl:w-1/4 px-4">
             <ProfileCard key={profile.slug} profile={profile} />
           </div>
         ))}
