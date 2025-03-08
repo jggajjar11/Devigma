@@ -107,7 +107,9 @@ const Header = ({ isAuthenticated, handleLogout }) => {
                 </div>
               </div>
             ) : (
-              <Link to="/login">Login</Link>
+              <Link className="block md:hidden" to="/login">
+                Login
+              </Link>
             )}
           </div>
           <div className="flex w-full md:w-auto items-center space-x-0 md:space-x-10">
