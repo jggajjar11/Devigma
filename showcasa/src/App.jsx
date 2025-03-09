@@ -24,7 +24,7 @@ const App = () => {
 
   const handleLogin = () => {
     setIsAuthenticated(true);
-    localStorage.setItem("isAuthenticated", "true");    
+    localStorage.setItem("isAuthenticated", "true");
   };
 
   const handleLogout = () => {

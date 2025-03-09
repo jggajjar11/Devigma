@@ -8,11 +8,11 @@ const WorkDetail = ({ portfolioItem, profile }) => {
   }
 
   return (
-    <div className="work-detail-container max-w-[1200px] mx-auto py-20">
-      <div className="flex justify-between items-center mb-14">
-        <div className="flex items-center">
+    <div className="work-detail-container max-w-[1200px] mx-auto py-20 px-4">
+      <div className="flex justify-between items-center mb-14 flex-wrap gap-y-10  sm:flex-row">
+        <div className="flex items-center order-1 sm:order-0">
           <img
-            src="/user-img.png"
+            src="/user-detail-page.png"
             alt={profile.name}
             className="mr-5"
             width="56"
@@ -23,7 +23,7 @@ const WorkDetail = ({ portfolioItem, profile }) => {
             <p className="text-[#211F24]">{profile.tagline}</p>
           </div>
         </div>
-        <div>
+        <div className="order-0 sm:order-1">
           <Link to={`/profile/${profile.slug}`} className="btn btn-secondary">
             <span className="relative z-[1]">Back to Profile</span>
           </Link>

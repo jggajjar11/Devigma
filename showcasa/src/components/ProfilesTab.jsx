@@ -16,7 +16,7 @@ const ProfilesTab = () => {
         {skills.map((crSkill, index) => (
           <div
             key={index}
-            className={`text-lg capitalize rounded-full px-4 py-3 border border-[#DAD8DD] cursor-pointer
+            className={`text-lg capitalize rounded-full px-4 py-2 border border-[#DAD8DD] cursor-pointer
              
              ${
                skill === crSkill

@@ -7,7 +7,7 @@ const ProfileCard = ({ profile }) => {
     <div className="profile-card flex flex-col rounded-3xl border border-[#DAD8DD] h-full group">
       <div className="img-wrapper bg-[#D9D9D9] rounded-t-3xl overflow-hidden group-hover:cursor-pointer">
         <img
-          src="/mobile.jpg"
+          src="/user_image.png"
           className="h-[230px] object-cover w-full"
           alt="user-profile-1"
           width={340}
