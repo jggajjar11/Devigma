@@ -19,7 +19,7 @@ const SearchResults = () => {
     <div className="py-20">
       <h1 className="text-center">Search Talent</h1>
       <div className="max-w-[1420px] mx-auto px-4">
-        <div className="search-input-wrapper flex items-center justify-center mt-8 gap-x-4 gap-y-3">
+        <div className="search-input-wrapper flex flex-wrap items-center justify-center mt-8 gap-x-4 gap-y-3">
           <input
             type="text"
             placeholder="Search by skill"
